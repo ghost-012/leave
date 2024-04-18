@@ -17,15 +17,4 @@
 
         if ($user['role'] == 'super admin') {
             // Redirect to super admin dashboard
-            header('Location: super_admin_dashboard.php');
-        } elseif ($user['role'] == 'admin') {
-            // Redirect to admin dashboard
-            header('Location: admin_dashboard.php');
-        } elseif ($user['role'] == 'employee') {
-            // Redirect to employee dashboard
-            header('Location: employee_dashboard.php');
-        }
-    } else {
-        echo "Invalid username or password";
-    }
-?>
+    
